@@ -1,4 +1,4 @@
-import { beginCell, contractAddress, toNano, Cell, Address, TonClient4 } from "ton";
+import { beginCell, contractAddress, toNano, Cell, Address, TonClient4 } from "@ton/ton";
 import { deploy } from "./utils/deploy";
 import { printAddress, printDeploy, printHeader } from "./utils/print";
 // ================================================================= //

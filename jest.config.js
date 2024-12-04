@@ -1,7 +1,12 @@
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
+import 'jest';
+
+/** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  testPathIgnorePatterns: ["/node_modules/","/dist/"],
-  maxWorkers: 1
+  testMatch: ['**/*.spec.ts'],
+  transform: {
+      '^.+\\.tsx?$': 'ts-jest',
+  },
 };
+
